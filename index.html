@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- DO NOT MODIFY THIS FILE -->
+      <!-- THIS CODE IS USED BY script.js -->
+      <!-- Note this code has been written in a way to minimize javascript dom interactions since that has not yet been covered. -->
+      <input type="text" class="display" id="display" readonly />
+
+      <div class="buttons">
+        <!-- Row 1 -->
+        <button class="clear" onclick="handleInput('C')">C</button>
+        <button class="clear" onclick="handleInput('CE')">CE</button>
+        <button class="operator" onclick="handleInput('/')">/</button>
+        <button class="operator" onclick="handleInput('*')">×</button>
+
+        <!-- Row 2 -->
+        <button class="number" onclick="handleInput('7')">7</button>
+        <button class="number" onclick="handleInput('8')">8</button>
+        <button class="number" onclick="handleInput('9')">9</button>
+        <button class="operator" onclick="handleInput('-')">-</button>
+
+        <!-- Row 3 -->
+        <button class="number" onclick="handleInput('4')">4</button>
+        <button class="number" onclick="handleInput('5')">5</button>
+        <button class="number" onclick="handleInput('6')">6</button>
+        <button class="operator" onclick="handleInput('+')">+</button>
+
+        <!-- Row 4 -->
+        <button class="number" onclick="handleInput('1')">1</button>
+        <button class="number" onclick="handleInput('2')">2</button>
+        <button class="number" onclick="handleInput('3')">3</button>
+        <button class="equals" onclick="handleInput('=')" rowspan="2">=</button>
+
+        <!-- Row 5 -->
+        <button
+          class="number"
+          onclick="handleInput('0')"
+          style="grid-column: span 1"
+        >
+          0
+        </button>
+
+        <button class="number" onclick="handleInput('.')">.</button>
+
+
+        <!-- Uncomment this section if  adding decimals for stretch goal -->
+        <!-- <button class="decimal" onclick="handleInput('.')">.</button> -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
